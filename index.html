@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Odin signup form</title>
+        <link href="styles.css" rel="stylesheet"></link>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <div id="left">
+            <img id="background" src="download.jpeg">
+            <div id="divOnBackground">
+                <img id="odin" src="odin-lined.png">
+                <p id="GOJO">GOJO</p>
+            </div>
+        </div>
+        <div id="right">
+            <p id="calling">This is not a real online service! You know you need something like this in your life to realise your
+                deepest dreams. <br>
+                Sign up <i>now</i> to get started.<br>
+                <br>
+                You <i>know</i> you want to.
+            </p>
+            <form id="userForm" action="post" method="post">
+                <p id="do">Let's do this</p>
+                <div id = "inputs">
+                    
+                    <div id="left-input">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="first-name">
+
+                    <label for="user-email">EMAIL</label>
+                    <input type="email" pattern="[0-9]{10}" name="user-email" title="Wrong">
+                    
+                     <label for="password">PASSWORD</label>
+                    <input type="text" name="password">
+                    </div>
+
+                    <div id="right-input">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="last-name">
+                    
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" name="phone-number" pattern="[0-9]{10}" title="Wrong">
+                    
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="text" name="confirm-password">
+                    </div>
+                </div>
+            </form>
+            <div id="last-bit">
+                <button type="submit" form="userForm" id="create" value="Submit"> Create Account</button>
+                <p id="signin"> Already got an account?</p>
+            </div>
+        </div>
+    </body>
+</html>
